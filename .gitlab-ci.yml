@@ -1,16 +1,11 @@
 image: ruby:2.3
 
-cache:
-  key: $CI_PROJECT_NAME
-  paths:
-  - vendor/ruby
-
 variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
 
 before_script:
-  - bundle install -j $(nproc) --path vendor
+  - bundle install
 
 pages:
   stage: deploy
