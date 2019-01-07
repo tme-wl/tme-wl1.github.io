@@ -6,7 +6,6 @@ variables:
 
 before_script:
   - bundle install
-  - gem install jekyll-redirect-from jekyll-relative-links jekyll-sitemap
 
 pages:
   stage: deploy

@@ -8,3 +8,4 @@ CNAME
 Gemfile.lock
 _samples/library/**
 _kbase/**
+public/
